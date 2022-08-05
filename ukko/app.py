@@ -22,7 +22,12 @@ config = {
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
+@app.route("/", methods = ['GET', 'POST'])
+def signin():
+    if request.method == 'POST':
 
+    else:
+        return render_template("main.html")
 
 #Code goes above here
 
