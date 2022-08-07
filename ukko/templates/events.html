@@ -13,31 +13,70 @@
             body {
                 background-color: rgb(249, 241, 222);
             }
-
-            .flex-container {
-                display: flex !important;
-                flex-direction: row !important;
-                flex-wrap: wrap !important;
-                max-width: 350px;
-                margin: auto;
-                text-align: center; 
+            img{
+                height:150px;
+                width:100%;
             }
 
-            .flex-direction .card {
-                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                transition: 0.3s;
-                padding-top: 50px;
-
+            div [class^="col-"]{
+                padding-left:5px;
+                padding-right:5px;
+            }
+            .card{
+                transition:0.5s;
+                cursor:pointer;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .card-title{  
+                font-size:15px;
+                transition:1s;
+                cursor:pointer;
+                padding-left: 125px;
+                font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+            }
+            .card-title i{  
+                font-size:15px;
+                transition:1s;
+                cursor:pointer;
+                color:white;
+            }
+            .card-title i:hover{
+                transform: scale(1.25) rotate(100deg); 
+                color:#18d4ca;
+              
+            }
+            .card:hover{
+                transform: scale(1.05);
+                box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+            }
+            .card-text{
+                height:80px; 
+                padding-left: 30px; 
+                font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
             }
 
-            .card:hover {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            .card::before, .card::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform: scale3d(0, 0, 1);
+                transition: transform .3s ease-out 0s;
+                background: rgba(255, 255, 255, 0.1);
+                content: '';
+                pointer-events: none;
             }
-
-            .container {
-                padding: 2px 16px;
+            .card::before {
+                transform-origin: left top;
             }
-
+            .card::after {
+                transform-origin: right bottom;
+            }
+            .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+                transform: scale3d(1, 1, 1);
+            }
 
             .h {
                 text-align: center;
@@ -46,7 +85,8 @@
                 padding-top: 50px;
                 font-size: 60px;
                 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-                font-weight: 100
+                font-weight: 100;
+                color: rgb(99, 95, 84) ;
             }
             .p {
                 text-align: center;
@@ -54,8 +94,16 @@
                 width: 50%;
                 padding-top: 10px;
                 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-                font-weight: 100
+                font-weight: 100;
+                color: rgb(99, 95, 84);
 
+            }
+
+            #box {
+                width: 320px;
+                padding: 10px;
+                color:solid gray;
+                margin: 0;
             }
 
  
@@ -105,27 +153,50 @@
 
         <br/>
 
-        <div class="flex-container">
-
-            <div class="card">
-                <img src="static/1.jpeg" alt="event-card">
-                <div class="container">
-                    <h4><b>school trips</b></h4> 
-                    <p>kids are getting to know more
-                    <br/> about ukko's technology by visiting the company!</p> 
+    <div class="container mt-2">
+    <!--   <div class="card card-block mb-2">
+        <h4 class="card-title">Card 1</h4>
+        <p class="card-text">Welcom to bootstrap card styles</p>
+        <a href="#" class="btn btn-primary">Submit</a>
+      </div>   -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+                <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+                <h5 class="card-title mt-3 mb-3">text</h5>
+                <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
                 </div>
             </div>
-
-            <div class="card">
-                <img src="static/2.jpg" alt="event-card">
-                <div class="container">
-                    <h4><b>school trips</b></h4> 
-                    <p>kids are getting to know more 
-                    <br/>about ukko's technology by visiting the company!</p> 
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+                <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+                <h5 class="card-title  mt-3 mb-3">text</h5>
+                <p class="card-text">This is a company that builds websites, web .</p> 
                 </div>
             </div>
-
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+                <img src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset">
+                <h5 class="card-title  mt-3 mb-3">text</h5>
+                <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-block">
+                <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+                <img src="https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg" alt="Photo of sunset">
+                <h5 class="card-title  mt-3 mb-3">text</h5>
+                <p class="card-text">This is a company that builds websites, web apps and e-commerce solutions.</p> 
+                </div>
+            </div>    
         </div>
+      
+    </div>
+
+    <div id="box"> thos is the email box </div>
 
 
 
@@ -140,3 +211,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
