@@ -23,17 +23,19 @@ firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 
 @app.route("/", methods = ['GET', 'POST'])
-def signin():
-<<<<<<< HEAD
+def home():
 	return render_template("info.html")
-=======
-	return render_template("events.html")
 
-
+@app.route("/events", methods = ['GET', 'POST'])
+def events():
+	if request.method == 'GET':
+		return render_template("info.html")
+	else:
+		return render_template("events.html")
 @app.route("/info", methods = ['GET', 'POST'])
-def qbox (): #code to sing in and send questions 
+def qbox (): #code to sign in and send questions 
   return render_template("info.html")
->>>>>>> d23a0872ac3e80ef13e403412aee5596968912c5
+
 
 #Code goes above here
 
