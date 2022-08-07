@@ -24,7 +24,16 @@ auth = firebase.auth()
 
 @app.route("/", methods = ['GET', 'POST'])
 def signin():
+<<<<<<< HEAD
 	return render_template("info.html")
+=======
+	return render_template("events.html")
+
+
+@app.route("/info", methods = ['GET', 'POST'])
+def qbox (): #code to sing in and send questions 
+  return render_template("info.html")
+>>>>>>> d23a0872ac3e80ef13e403412aee5596968912c5
 
 #Code goes above here
 
