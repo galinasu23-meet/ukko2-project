@@ -24,7 +24,7 @@ auth = firebase.auth()
 
 @app.route("/", methods = ['GET', 'POST'])
 def signin():
-	return render_template("index.html")
+	return render_template("info.html")
 
 #Code goes above here
 
