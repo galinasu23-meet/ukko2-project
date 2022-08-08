@@ -16,7 +16,7 @@ config = {
   "messagingSenderId": "790719983301",
   "appId": "1:790719983301:web:1a240d7e0134e922f48aac",
   "measurementId": "G-767LHYRXX6",
-  "databaseURL": ""
+  "databaseURL": "https://ukko-final-project-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
 firebase = pyrebase.initialize_app(config)
@@ -28,10 +28,11 @@ def home():
 
 @app.route("/events", methods = ['GET', 'POST'])
 def events():
-	if request.method == 'GET':
+	if request.method == 'POST':
 		return render_template("info.html")
 	else:
 		return render_template("events.html")
+
 @app.route("/info", methods = ['GET', 'POST'])
 def qbox (): #code to sign in and send questions 
   return render_template("info.html")
