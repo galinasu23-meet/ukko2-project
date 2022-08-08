@@ -24,7 +24,7 @@ auth = firebase.auth()
 
 @app.route("/", methods = ['GET', 'POST'])
 def home():
-	return render_template("info.html")
+	return render_template("events.html")
 
 @app.route("/events", methods = ['GET', 'POST'])
 def events():
@@ -34,8 +34,13 @@ def events():
 		return render_template("events.html")
 
 @app.route("/info", methods = ['GET', 'POST'])
-def qbox (): #code to sign in and send questions 
-  return render_template("info.html")
+def qbox ():
+	if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        user = {"email" : email, "password" : password}
+        db.child('Users').child(login_session['user']['localId']).set(user)
+        return render_template("info.html")
 
 
 #Code goes above here
