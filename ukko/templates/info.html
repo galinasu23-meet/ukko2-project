@@ -57,7 +57,7 @@ body {
 
 .centered {
   position: relative;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -67,6 +67,11 @@ body {
   width: 150px;
   border-radius: 50%;
 }
+
+.form{
+    left:50% ;
+}
+
 </style>
     </head>
     <body>
@@ -127,13 +132,13 @@ body {
     </div>
 </div>
 <br>
-<form method = "POST" action = "/info" class="form">
+<form method = "POST" action = "/info" style="left:" class="form">
 <div class="col-md-3 col-sm-6">
 <div class="card card-block">
 <input name="email" class="un" type="text" align="center" placeholder="Email" required>
 <input name="question" class="un" type="text" align="center" placeholder="Question" required>
 </div>
-</form>
+</form >
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
