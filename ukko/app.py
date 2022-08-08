@@ -35,12 +35,14 @@ def events():
 
 @app.route("/info", methods = ['GET', 'POST'])
 def qbox ():
-	if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['password']
-        user = {"email" : email, "password" : password}
-        db.child('Users').child(login_session['user']['localId']).set(user)
+	#if request.method == 'POST': 
+        #email = request.form['email']
+        #password = request.form['password']
+        #user = {"email" : email, "password" : password}
+        #db.child('Users').child(login_session['user']['localId']).set(user)
         return render_template("info.html")
+    #else: 
+
 
 
 #Code goes above here
