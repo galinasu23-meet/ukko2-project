@@ -40,7 +40,7 @@ def qbox ():
 		email = request.form['email']
 		question = request.form['question']
 		user = {"email" : email, "question" : question}
-		db.child('Users').set(user)
+		db.child('Users').push(user)
 		return redirect(url_for('home'))
 	else:
 		return render_template("info.html")
