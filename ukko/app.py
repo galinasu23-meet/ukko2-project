@@ -21,6 +21,7 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
+db = firebase.database()
 
 @app.route("/", methods = ['GET', 'POST'])
 def home():
@@ -39,7 +40,7 @@ def qbox ():
 		email = request.form['email']
 		question = request.form['question']
 		user = {"email" : email, "question" : question}
-		db.child('Questions').set(user)
+		db.child('Users').set(user)
 		return redirect(url_for('info'))
 	else:
 		return render_template("info.html")
