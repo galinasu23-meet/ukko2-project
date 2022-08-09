@@ -24,33 +24,34 @@
             }
 
             .row{
-                grid-column-gap: 100px;
+                grid-column-gap: 40px;
             }
 
             .flex-container{
                 display: flex !important;
-/*                flex-direction: row !important;
-                flex-wrap: wrap !important;*/
                 justify-content: center;
+                align-items: stretch;
+                flex-wrap: wrap;
 
 
             }
             .flex-container .card{
                 transition:0.5s;
-                width: 500px;
-                height: 400px;
+                width: 377px;
+                height: 390px;
                 margin-right: auto; 
                 margin-left: auto;
-            }
+                /*margin: 10px;
+*/            }
             .card-title{  
-                font-size:15px;
+                font-size:10%px;
                 transition:1s;
                 cursor:pointer;
-                padding-left: 125px;
+                padding-left: 10%;
                 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
             }
             .card-title i{  
-                font-size:15px;
+                font-size:5px;
                 transition:1s;
                 cursor:pointer;
                 color:white;
@@ -65,10 +66,10 @@
                 box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
             }
             .card-text{
-                height:80px;
                 padding-bottom: 100%; 
-                padding-left: 30px; 
+                padding-left: 5%; 
                 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+                font-size: 15px;
             }
 
             .card::before, .card::after {
@@ -133,8 +134,7 @@
                 color: rgb(249, 241, 222);
 
             }
-            #boxp {
-                color: rgb(252, 213, 52);
+            #box11 {
                 text-align: center;
                 margin: auto;
                 width: 50%;
@@ -142,6 +142,9 @@
                 font-size: 20px;
                 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
                 font-weight: 100;
+            }
+            #boxp{
+                color: rgb(252, 213, 52);
             }
              .row{
                 row-gap: 40px;
@@ -197,25 +200,25 @@
 
         <br/>
 
-    <div class="flex-container mt-2">
+    <div class="flex-container">
         <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <!-- <div class="col-md-3 col-sm-6"> -->
                 <div class="card card-block">
                     <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
-                    <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+                    <img src="static/highschool.jpg">
                     <h5 class="card-title mt-3 mb-3">Schools And University Cirruculum</h5>
                     <p class="card-text">We believe that students are the future, so we will be including educative topics about nutrition and the gluten issue specifically, starting as an initial point from high schoolers and university students in the region and in the USA. </p> 
                 </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
+            <!-- </div>
+ -->
+           <!--  <div class="col-md-3 col-sm-6"> -->
                 <div class="card card-block">
                     <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
-                    <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+                    <img src="static/workshops.jpg">
                     <h5 class="card-title  mt-3 mb-3">Workshops</h5>
                     <p class="card-text">We also truly believe that people who did not get the chance to understand how important is to take care of nutrition and gluten-including meals get to a point where they finally do, consequently, we will do interactive workshops to deliver our mission and vision. </p> 
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 
@@ -227,7 +230,10 @@
 
     <div id="box"> 
         <h1 id = "boxh">email us to book an event!</h1>
-        <p id = "boxp" href="#">info@ukko.us</p>
+        <div id="box11">
+            <a id = "boxp" href="mailto:gsulpovar@gmail.com?subject=events%20quota&body=please%20increase%20my%20quota%0a">events@gmail.com</a>
+        </div>
+
     </div>
 
 
