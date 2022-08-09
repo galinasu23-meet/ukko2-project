@@ -47,8 +47,8 @@ def qbox ():
 
 @app.route("/questions",methods=['POST','GET'])
 def question():
-  question=db.child('Users').get().val()
-  return render_template("questions.html",question=question)
+  questions=db.child('Users').get().val()
+  return render_template("questions.html",questions=questions)
 
 #Code goes above here
 

@@ -3,13 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Questions</title>
 </head>
 <body>
-	{%for i in question%}
-	<h2>{{question[i]['email']}}</h2>
-	<h2>{{question[i]['question']}}</h2>
+<h1>
+	Display QUESTIONS!!
+	<br>
+	------------------------------
+</h1>
+<h1>
+	{% for i in questions %}
+	Email: {{questions[i]['email']}}
+	<br>
+	Questions: {{questions[i]['question']}}
+	<br>
+-------------------------
+	<br>
 	{%endfor%}
-
+</h1>
 </body>
 </html>
