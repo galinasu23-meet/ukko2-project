@@ -45,6 +45,11 @@ def qbox ():
 	else:
 		return render_template("info.html")
 
+@app.route("/questions",methods=['POST','GET'])
+def question():
+  questions=db.child('Users').get().val()
+  return render_template("questions.html",questions=questions)
+
 #Code goes above here
 
 if __name__ == '__main__':
