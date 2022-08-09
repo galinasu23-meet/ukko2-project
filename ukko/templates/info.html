@@ -355,6 +355,26 @@
                 font-family:roboto-thin,roboto,sans-serif;
             }
 
+            .articles{
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 5%;
+                background: white;
+                padding-top: 40px;
+                padding-bottom: 25px;
+                margin: 55px;
+                margin-left: auto;
+                margin-right: auto;
+                                overflow: hidden;
+            }
+            .flex-container{
+                display: flex !important;
+                justify-content: center;
+                align-items: stretch;
+                flex-wrap: column;
+
+
+            }
         </style>
 
         <nav style="background-color: rgb(252, 213, 52);"class="navbar navbar-expand-lg navbar-light  nav">
@@ -400,9 +420,20 @@
         <div class="row">
             <div class=" split left">
                 <div class="centered">
-                    <h2>Jane Flex</h2>
-                    <p>Some text.</p>
+                    <div class="articles">
+                        <a href="https://www.imaware.health/blog/risks-of-a-gluten-free-diet"><h4 style="font-family: arial;,width: 120%;">"Should I Go Gluten Free? 4 Risks of a Gluten Free Diet"</h4></a>
+                    </div>
+                    <div class="articles">
+                        <a href="https://www.imaware.health/blog/risks-of-a-gluten-free-diet"><h4 style="font-family: arial;,width: 120%;">"Should I Go Gluten Free? 4 Risks of a Gluten Free Diet"</h4></a>
+                    </div>
                 </div>
+                <div class="flex-container">
+            <!-- <div class="col-md-3 col-sm-6"> -->
+                <div class="card card-block">
+                    <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
+                    <a href="https://www.imaware.health/blog/risks-of-a-gluten-free-diet"><h4 style="font-family: arial;,width: 120%;">"Should I Go Gluten Free? 4 Risks of a Gluten Free Diet"</h4></a>
+                </div>
+            </div>
             </div>
 
             <div class="split right">
