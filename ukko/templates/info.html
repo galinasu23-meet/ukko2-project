@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="static/css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>events</title>
@@ -12,9 +13,6 @@
 
         <style>
 
-            body {
-                font-family: Arial;
-            }
             #nav{
                 background-color:rgb(217, 186, 55);
             }
@@ -58,7 +56,7 @@
                 cursor: pointer;
                 border-radius: 5em;
                 color: #fff;
-                background: linear-gradient(to right, #9C27B0, #E040FB);
+                background: black;
                 border: 0;
                 padding-left: 40px;
                 padding-right: 40px;
@@ -91,6 +89,15 @@
 
             .form{
                 left:50% ;
+            }
+
+            #box {
+                background: rgb(99, 95, 84); 
+                font-size: 20px; 
+                padding: 30px; 
+                border: 0px solid lightgray; 
+                padding-bottom : 50px;
+                padding-top: 100px;
             }
 
 
@@ -247,6 +254,10 @@
                 font-size: 16px;
             }
 
+            body{
+                font-family:roboto-thin,roboto,sans-serif;
+            }
+
         </style>
 
         <nav style="background-color: rgb(252, 213, 52); ? "class="navbar navbar-expand-lg navbar-light  nav">
@@ -301,7 +312,7 @@
                     <!-- 1 -->
                     <div class="container">
                         <div class="img-container">
-                             <img src="https://images.unsplash.com/photo-1534809027769-b00d750a6bac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+                             <img src="https://dl.airtable.com/.attachments/405bd902338bf37ff8f2d62fdb29b0f0/151c4d80/JennyLevineFinke.jpg?ts=1652560554&userId=usrZM6eTKFEu0hqym&cs=324d733efa2382a3" alt="">
                         </div>
                         <ul class="social-media">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -319,7 +330,7 @@
                     <!-- 2 -->
                     <div class="container">
                         <div class="img-container">
-                             <img src="https://images.unsplash.com/photo-1534809027769-b00d750a6bac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+                             <img src="https://natfluence.com/wp-content/uploads/2017/06/jackieaanonsen4.jpg" alt="">
                         </div>
                         <ul class="social-media">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -409,10 +420,7 @@
                 </div>
             </div>
         </div>
-
-        <br>
-        <br> 
-
+    <div id="box">
     <form method = "POST" action = "/info" style="left:" class="form">
         <div class="col-md-3 col-sm-6">
             <div class="card card-block">
@@ -422,6 +430,8 @@
             </div>
         </div>
     </form >
+    </div>
+    <br><br>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
