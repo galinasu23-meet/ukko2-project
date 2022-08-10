@@ -55,7 +55,7 @@
 
             .right {
                 
-                background-color: rgb(243, 225, 125);
+                background-color: #b8ad8d;
             }
 
             .centered {
@@ -67,7 +67,7 @@
             }
 
             .centered img {
-              width: 150px;
+              width: fixed;
               border-radius: 50%;
             }
 
@@ -96,7 +96,7 @@
             .form input {
                 font-family: "Roboto", sans-serif;
                 outline: 0;
-                background: #f2f2f2;
+                background: rgb(249, 241, 222);
                 width: 100%;
                 border: 0;
                 margin: 0 0 15px;
@@ -108,7 +108,7 @@
                 font-family: "Roboto", sans-serif;
                 text-transform: uppercase;
                 outline: 0;
-                background: #4CAF50;
+                background: rgb(221, 200, 107);
                 width: 100%;
                 border: 0;
                 padding: 15px;
@@ -119,7 +119,7 @@
                 cursor: pointer;
             }
             .form button:hover,.form button:active,.form button:focus {
-                background: #43A047;
+                background: rgb(221, 200, 107);
             }
             .form .message {
                 margin: 15px 0 0;
@@ -171,23 +171,14 @@
                 text-align: center;
                 margin: auto;
                 width: 50%;
-                padding-top: 70px;
+                padding-top: 100px;
+                padding-left: 250px;
                 font-size: 30px;
                 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
                 font-weight: 100;
                 color: rgb(249, 241, 222);
                 text-shadow:0px 2px 5px rgba(0,0,0,0.3);
-            }
-            #q2{
-                text-align: center;
-                margin: auto;
-                width: 50%;
-                padding-top: 20px;
-                font-size: 50px;
-                font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-                font-weight: 100;
-                color:rgb(224, 126, 0);
-                text-shadow:0px 2px 5px rgba(0,0,0,0.3);
+
             }
             body {
                 background:rgb(99, 95, 84) ;
@@ -256,8 +247,8 @@
             }
 
             .img-container > img {
-                height: 100%;
-                width: 100%;
+                height: 107%;
+                width: 108%;
                 transition: opacity 0.3s ease-out;
             }
 
@@ -365,17 +356,34 @@
                 margin: 55px;
                 margin-left: auto;
                 margin-right: auto;
-                                overflow: hidden;
+                overflow: hidden;
             }
             .flex-container{
                 display: flex !important;
                 justify-content: center;
                 align-items: stretch;
                 flex-wrap: column;
-
-
             }
+/*
+            .flex-container {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: wrap !important;*/x;
+            }
+            #title11{
+                font-size: 45px;
+                color: rgb(231, 153, 52) ;
+                font-weight: 50;
+                font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+                shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                margin-top: 10%;
+                margin-left: 20%;
+                text-align: left;
+                line-height: 95%;
+            }
+
         </style>
+
 
         <nav style="background-color: rgb(252, 213, 52);"class="navbar navbar-expand-lg navbar-light  nav">
             <a class="navbar-brand" href="#">
@@ -418,23 +426,24 @@
 
 
         <div class="row">
-            <div class=" split left">
+            <div class="split left">
                 <div class="centered">
-                    <div class="articles">
-                        <a href="https://www.imaware.health/blog/risks-of-a-gluten-free-diet"><h4 style="font-family: arial;,width: 120%;">"Should I Go Gluten Free? 4 Risks of a Gluten Free Diet"</h4></a>
+                    <div id="title11">
+                        <a href ="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7920475/#:~:text=A%20gluten%2Dfree%20diet%20is,risk%20of%20the%20metabolic%20syndrome"  style="color :rgb(99, 95, 84);" > "Multidimensional Disadvantages of a Gluten-Free Diet in Celiac Disease..."</a>
                     </div>
-                    <div class="articles">
-                        <a href="https://www.imaware.health/blog/risks-of-a-gluten-free-diet"><h4 style="font-family: arial;,width: 120%;">"Should I Go Gluten Free? 4 Risks of a Gluten Free Diet"</h4></a>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="title11">
+                        <a href ="https://www.imaware.health/blog/risks-of-a-gluten-free-diet" style="color:rgb(231, 153, 52);"> "Should I Go Gluten Free? 4 Risks of a Gluten Free Diet.."</a>
                     </div>
-                </div>
-                <div class="flex-container">
-            <!-- <div class="col-md-3 col-sm-6"> -->
-                <div class="card card-block">
-                    <h4 class="card-title text-right"><i class="material-icons">settings</i></h4>
-                    <a href="https://www.imaware.health/blog/risks-of-a-gluten-free-diet"><h4 style="font-family: arial;,width: 120%;">"Should I Go Gluten Free? 4 Risks of a Gluten Free Diet"</h4></a>
+                    
                 </div>
             </div>
-            </div>
+
+
+
+
 
             <div class="split right">
                 <div class="flex-container">
@@ -541,8 +550,11 @@
        <section class="vh-100">
             <div class="container-fluid">
                 <div class="row">
-                    <h1 id="q1">kkkkkkk</h1>
-                    <h1 id="q2">;lllllll</h1>
+                    <h1 id="q1">do you have a question?</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <h1 id="q2" style="color: rgb(99, 95, 84);">LET US KNOW!</h1>
                     <div class="login-page">
 
                         <div class="form">
@@ -556,28 +568,10 @@
                             </form>
 
                         </div>
-
                     </div>
-                    <!-- <div class="col-sm-6 px-0 d-none d-sm-block">
-                         <img src="static/bg.jpg"
-                            alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
-                    </div> -->
                 </div>
             </div>
         </section>
-
-
-    <!-- <div id="box"> -->
-<!--     <form method = "POST" action = "/info" style="left:" class="form">
-        <div class="col-md-3 col-sm-6">
-            <div class="card card-block">
-                <input name="email" class="un" type="text" align="center" placeholder="Email" required>
-                <input name="question" class="un" type="text" align="center" placeholder="Question" required>
-                <input class="submit" type="submit" value="Submit">
-            </div>
-        </div>
-    </form >
-    </div> -->
     <br><br>
 
         <!-- Bootstrap core JS-->
